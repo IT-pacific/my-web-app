@@ -11,4 +11,4 @@ app.get("/v1/server-status", (req, res) => {
     res.status(200).send("All services are active 👍");
 });
 
-app.listen(8000, () => "Server up and runnin!");
+app.listen(3000, () => "Server up and runnin!");

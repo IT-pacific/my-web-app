@@ -5,6 +5,8 @@ const app = express();
 
 app.use(cors());
 
+console.log("Hello, this is a basic web app!");
+
 // Test route
 app.get("/v1/server-status", (req, res) => {
     console.log(req.url);

@@ -28,12 +28,17 @@ app.post("/v1/login", (req, res) => {
     if (!user) {
         return res
             .status(401)
-            .json({ Ok: false, message: "Invalid credentials." });
+            .json({ Ok: false, message: "Invalid credentials" });
     }
     res.status(200).json({
         Ok: true,
         message: "Logged In your're very welcome!",
     });
+});
+
+// about page route
+app.get("/v1/about", (req, res) => {
+    res.status(200).send("<html><h1>About Page.</h1></html>");
 });
 
 app.listen(3000, () => "Server up and runnin!");

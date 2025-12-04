@@ -36,6 +36,7 @@ app.post("/v1/login", (req, res) => {
     });
 });
 
+// about page route
 app.get("/v1/about", (req, res) => {
     res.status(200).send("<html><h1>About Page.</h1></html>");
 });
